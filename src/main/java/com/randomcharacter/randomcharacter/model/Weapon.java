@@ -1,4 +1,4 @@
 package com.randomcharacter.randomcharacter.model;
 
-public class race {
+public class Weapon {
 }

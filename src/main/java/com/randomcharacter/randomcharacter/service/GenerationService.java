@@ -8,7 +8,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 @Service
-public class RaceService {
+public class GenerationService {
 
     private RaceRepository raceRepository;
 
@@ -16,7 +16,6 @@ public class RaceService {
     public void setRaceRepository(RaceRepository raceRepository) {
         this.raceRepository = raceRepository;
     }
-
 
     // Used https://stackoverflow.com/a/43054173 to figure out the random generation
 

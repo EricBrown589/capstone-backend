@@ -14,8 +14,8 @@ public class Race {
     @Column
     private String name;
 
-    @OneToOne(mappedBy = "race")
-    private Character character;
+//    @OneToOne(mappedBy = "race")
+//    private Character character;
 
     public Race() {
     }
@@ -36,11 +36,11 @@ public class Race {
         this.name = name;
     }
 
-    public Character getCharacter() {
-        return character;
-    }
-
-    public void setCharacter(Character character) {
-        this.character = character;
-    }
+//    public Character getCharacter() {
+//        return character;
+//    }
+//
+//    public void setCharacter(Character character) {
+//        this.character = character;
+//    }
 }

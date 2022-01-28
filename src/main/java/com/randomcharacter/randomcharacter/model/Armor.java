@@ -14,8 +14,8 @@ public class Armor {
     @Column
     private String name;
 
-    @OneToOne(mappedBy = "armor")
-    private Character character;
+//    @OneToOne(mappedBy = "armor")
+//    private Character character;
 
     public Armor() {
     }
@@ -36,11 +36,11 @@ public class Armor {
         this.name = name;
     }
 
-    public Character getCharacter() {
-        return character;
-    }
-
-    public void setCharacter(Character character) {
-        this.character = character;
-    }
+//    public Character getCharacter() {
+//        return character;
+//    }
+//
+//    public void setCharacter(Character character) {
+//        this.character = character;
+//    }
 }

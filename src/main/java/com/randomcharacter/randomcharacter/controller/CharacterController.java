@@ -3,9 +3,9 @@ package com.randomcharacter.randomcharacter.controller;
 import com.randomcharacter.randomcharacter.model.Character;
 import com.randomcharacter.randomcharacter.service.CharacterService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 public class CharacterController {
@@ -20,5 +20,10 @@ public class CharacterController {
     @PostMapping("/character")
     public Character createCharacter(@RequestBody Character characterObject) {
         return characterService.createCharacter(characterObject);
+    }
+
+    @GetMapping("/character")
+    public List<Character> getCharacter() {
+        return characterService.getCharacter();
     }
 }

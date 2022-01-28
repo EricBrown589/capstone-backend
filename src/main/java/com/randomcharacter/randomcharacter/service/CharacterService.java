@@ -6,6 +6,8 @@ import com.randomcharacter.randomcharacter.repository.CharacterRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class CharacterService {
 
@@ -21,6 +23,7 @@ public class CharacterService {
         this.generationService = generationService;
     }
 
+    // Used https://stackoverflow.com/a/55469831 to help with an error I was having with generation
     public Character createCharacter(Character characterObject) {
         Race race = generationService.getRandomRace();
         Armor armor = generationService.getRandomArmor();
@@ -31,5 +34,9 @@ public class CharacterService {
         characterObject.setWeapon(weapon);
         characterObject.setAttribute(attribute);
         return characterRepository.save(characterObject);
+    }
+
+    public List<Character> getCharacter() {
+        return characterRepository.findAll();
     }
 }

@@ -27,4 +27,9 @@ public class CharacterController {
     public List<Character> getCharacter() {
         return characterService.getCharacter();
     }
+
+    @DeleteMapping("/delete-character/{characterId}")
+    public void deleteCharacter(@PathVariable Long characterId) {
+        characterService.deleteCharacter(characterId);
+    }
 }

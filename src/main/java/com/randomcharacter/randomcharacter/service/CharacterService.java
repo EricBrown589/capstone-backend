@@ -39,4 +39,8 @@ public class CharacterService {
     public List<Character> getCharacter() {
         return characterRepository.findAll();
     }
+
+    public void deleteCharacter(Long characterId) {
+        characterRepository.deleteById(characterId);
+    }
 }

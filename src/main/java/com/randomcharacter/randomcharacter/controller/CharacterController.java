@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:4200")
 public class CharacterController {
 
     private CharacterService characterService;
@@ -17,7 +18,7 @@ public class CharacterController {
         this.characterService = characterService;
     }
 
-    @PostMapping("/character")
+    @PostMapping("/create-character")
     public Character createCharacter(@RequestBody Character characterObject) {
         return characterService.createCharacter(characterObject);
     }

@@ -9,6 +9,7 @@ import java.util.List;
 
 @RestController
 @CrossOrigin(origins = "https://random-character.herokuapp.com")
+//@CrossOrigin(origins = "https://localhost:4200")
 public class CharacterController {
 
     private CharacterService characterService;

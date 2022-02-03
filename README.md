@@ -29,3 +29,18 @@ This is an application that allows the user to create a random character that ca
 #### Final ERD 
 
 <img src="https://github.com/EricBrown589/capstone-frontend/blob/master/planning/diagrams/capstoneerd.PNG" width="600">
+
+
+### Endpoints
+
+[Postman documentation](https://documenter.getpostman.com/view/18490995/UVeFPSb9)
+
+| HTTP Method | Endpoint                                             | Functionality                                                            
+|-------------|------------------------------------------------------|---------------
+| GET         | /race                                                | Gets a random race  
+| GET         | /attribute                                           | Gets a random attribute   
+| GET         | /weapon                                              | Gets a random weapon  
+| GET         | /armor                                               | Gets a random armor 
+| POST        | /create-character                                    | Creates a random character 
+| GET         | /character                                           | Gets all characters 
+| DELETE      | /delete-character                                    | Deletes a character 

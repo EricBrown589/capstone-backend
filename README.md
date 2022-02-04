@@ -44,3 +44,9 @@ This is an application that allows the user to create a random character that ca
 | POST        | /create-character                                    | Creates a random character 
 | GET         | /character                                           | Gets all characters 
 | DELETE      | /delete-character                                    | Deletes a character 
+
+### Future development 
+
+- Add more data to the current models to have more options to randomly generate from.
+
+- Add more models and endpoints to have more aspects to a character.

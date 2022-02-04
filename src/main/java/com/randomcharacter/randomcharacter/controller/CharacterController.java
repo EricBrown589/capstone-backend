@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "https://random-character.herokuapp.com")
-//@CrossOrigin(origins = "https://localhost:4200")
+//@CrossOrigin(origins = "https://random-character.herokuapp.com")
+@CrossOrigin(origins = "http://localhost:4200")
 public class CharacterController {
 
     private CharacterService characterService;

@@ -38,7 +38,7 @@ public class GenerationService {
         this.weaponRepository = weaponRepository;
     }
     
-    // Used https://stackoverflow.com/a/43054173 to figure out the random generation
+    // Researched random generation and found https://stackoverflow.com/a/43054173 that helped me resolve my issue
     public Race getRandomRace() {
         Long qty = raceRepository.count();
         int index = (int)(Math.random() * qty);

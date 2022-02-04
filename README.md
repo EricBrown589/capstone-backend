@@ -4,6 +4,8 @@
 
 This is an application that allows the user to create a random character that can be used in writing, drawing, and in games.
 
+[Project frontend](https://github.com/EricBrown589/capstone-frontend)
+
 ### Technologies Used 
 
 ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
